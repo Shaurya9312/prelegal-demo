@@ -1,0 +1,43 @@
+LICENSE NOTICE FOR LEGAL DOCUMENT TEMPLATES
+===========================================
+
+All markdown files in this directory are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+    https://creativecommons.org/licenses/by/4.0/
+
+Source
+------
+These templates were obtained from the Common Paper GitHub organization:
+
+    https://github.com/CommonPaper
+
+Common Paper publishes its standard agreements as free-to-use and
+free-to-modify documents under CC BY 4.0.
+
+Attribution
+-----------
+"Common Paper standard agreements" by Common Paper, used under CC BY 4.0.
+Templates in this directory may have been renamed and may be modified by
+this project for use within the Prelegal Demo application.
+
+What CC BY 4.0 permits
+----------------------
+You are free to:
+
+  * Share  — copy and redistribute the material in any medium or format
+  * Adapt  — remix, transform, and build upon the material for any
+             purpose, even commercially
+
+Under the following terms:
+
+  * Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor
+    endorses you or your use.
+
+Disclaimer
+----------
+These documents are provided for informational purposes only and do not
+constitute legal advice. Consult a qualified attorney before relying on
+any agreement in this directory.
