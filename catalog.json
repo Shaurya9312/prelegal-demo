@@ -1,0 +1,68 @@
+{
+  "source": "https://github.com/CommonPaper",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "templateDir": "templates",
+  "templates": [
+    {
+      "name": "Mutual Non-Disclosure Agreement",
+      "description": "Standard terms for a two-way NDA, letting each party disclose confidential information for an agreed purpose. Covers permitted use, protection obligations, exclusions, and the confidentiality period.",
+      "filename": "mutual-nda.md"
+    },
+    {
+      "name": "Mutual Non-Disclosure Agreement (Cover Page)",
+      "description": "The fill-in cover page that accompanies the Mutual NDA standard terms. Captures party names, the disclosure purpose, term, and signature blocks, and incorporates the standard terms by reference.",
+      "filename": "mutual-nda-coverpage.md"
+    },
+    {
+      "name": "Cloud Service Agreement",
+      "description": "Comprehensive SaaS agreement covering access and use of a cloud service, customer data, security, warranties, indemnification, limitation of liability, payment, and termination.",
+      "filename": "cloud-service-agreement.md"
+    },
+    {
+      "name": "Design Partner Agreement",
+      "description": "Agreement for early-access design partners who trial a pre-release product in exchange for feedback. Covers product access, feedback rights, confidentiality, and intellectual property.",
+      "filename": "design-partner-agreement.md"
+    },
+    {
+      "name": "Service Level Agreement",
+      "description": "Uptime and support commitments that supplement a cloud service agreement, including target uptime calculation, exclusions, support response times, and service credits as the remedy.",
+      "filename": "service-level-agreement.md"
+    },
+    {
+      "name": "Professional Services Agreement",
+      "description": "Master agreement for delivering professional services under statements of work. Covers SOW mechanics, fees and expenses, deliverable ownership, personnel, warranties, and termination.",
+      "filename": "professional-services-agreement.md"
+    },
+    {
+      "name": "Data Processing Agreement",
+      "description": "GDPR-oriented DPA governing processing of customer personal data. Defines controller/processor and subprocessor roles, security measures, data subject requests, audits, and international transfers.",
+      "filename": "data-processing-agreement.md"
+    },
+    {
+      "name": "Software License Agreement",
+      "description": "License terms for on-premises or downloadable software, covering scope of the license, restrictions, delivery, support, audit rights, warranties, indemnification, and liability.",
+      "filename": "software-license-agreement.md"
+    },
+    {
+      "name": "Partnership Agreement",
+      "description": "Agreement between two companies cooperating on mutual obligations such as referrals, co-marketing, or joint go-to-market activity. Covers obligations, feedback, trademarks, confidentiality, and term.",
+      "filename": "partnership-agreement.md"
+    },
+    {
+      "name": "Pilot Agreement",
+      "description": "Short-form agreement for a time-boxed paid or unpaid product pilot. Covers pilot period access, evaluation purpose, conversion to a full agreement, fees, and termination.",
+      "filename": "pilot-agreement.md"
+    },
+    {
+      "name": "Business Associate Agreement",
+      "description": "HIPAA business associate agreement governing a provider's use and disclosure of protected health information, including safeguards, breach notification, subcontractors, and return or destruction of PHI.",
+      "filename": "business-associate-agreement.md"
+    },
+    {
+      "name": "AI Addendum",
+      "description": "Addendum layering AI-specific terms onto an existing product agreement. Covers use of AI services, input and output ownership, training restrictions, disclaimers, and acceptable use.",
+      "filename": "ai-addendum.md"
+    }
+  ]
+}
