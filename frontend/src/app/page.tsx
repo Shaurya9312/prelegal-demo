@@ -1,10 +1,22 @@
-import { MutualNdaForm } from "@/components/MutualNdaForm";
+"use client";
+
+import { useRef } from "react";
+import { MutualNdaForm, type MutualNdaFormHandle } from "@/components/MutualNdaForm";
 
 export default function Home() {
+  const formHandleRef = useRef<MutualNdaFormHandle>(null);
+
   return (
     <main className="page">
       <header className="page-header">
-        <h1>Mutual NDA Creator</h1>
+        <div className="page-header-top">
+          <h1>Mutual NDA Creator</h1>
+          <div className="page-header-actions">
+            <button type="button" onClick={() => formHandleRef.current?.downloadPdf()}>
+              Download Mutual NDA (.pdf)
+            </button>
+          </div>
+        </div>
         <p>
           Fill in the details below to generate a Common Paper Mutual
           Non-Disclosure Agreement, then download the completed document.
@@ -26,7 +38,7 @@ export default function Home() {
           .
         </p>
       </header>
-      <MutualNdaForm />
+      <MutualNdaForm ref={formHandleRef} />
     </main>
   );
 }

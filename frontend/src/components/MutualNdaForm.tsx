@@ -1,18 +1,21 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
-import { downloadTextFile } from "@/lib/download";
+import { forwardRef, useImperativeHandle, useMemo, useRef, useState } from "react";
 import {
-  buildDownloadFilename,
   buildMutualNda,
   createDefaultFormValues,
   getTodayIsoDate,
   type MutualNdaFormValues,
 } from "@/lib/mutual-nda";
+import { downloadMutualNdaPdf } from "@/lib/pdf";
 import { PartyFields } from "@/components/PartyFields";
 import { TermOptionField } from "@/components/TermOptionField";
 
-export function MutualNdaForm() {
+export type MutualNdaFormHandle = {
+  downloadPdf: () => void;
+};
+
+export const MutualNdaForm = forwardRef<MutualNdaFormHandle>(function MutualNdaForm(_props, ref) {
   const [values, setValues] = useState<MutualNdaFormValues>(() =>
     createDefaultFormValues(getTodayIsoDate()),
   );
@@ -24,12 +27,14 @@ export function MutualNdaForm() {
     setValues((current) => ({ ...current, [field]: value }));
   };
 
-  const handleDownload = () => {
+  const handleDownloadPdf = () => {
     if (!formRef.current?.reportValidity()) {
       return;
     }
-    downloadTextFile(buildDownloadFilename(values), preview);
+    downloadMutualNdaPdf(values);
   };
+
+  useImperativeHandle(ref, () => ({ downloadPdf: handleDownloadPdf }));
 
   return (
     <div className="nda-layout">
@@ -118,9 +123,11 @@ export function MutualNdaForm() {
           onChange={(value) => update("partyTwo", value)}
         />
 
-        <button type="button" onClick={handleDownload}>
-          Download Mutual NDA (.md)
-        </button>
+        <div className="form-actions">
+          <button type="button" onClick={handleDownloadPdf}>
+            Download Mutual NDA (.pdf)
+          </button>
+        </div>
       </form>
 
       <section className="nda-preview" aria-label="Document preview">
@@ -129,4 +136,4 @@ export function MutualNdaForm() {
       </section>
     </div>
   );
-}
+});

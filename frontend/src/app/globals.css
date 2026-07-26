@@ -25,6 +25,24 @@ body {
   padding: 2rem 1.5rem 4rem;
 }
 
+.page-header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.page-header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.page-header-actions button {
+  flex-shrink: 0;
+}
+
 .page-header h1 {
   margin-bottom: 0.5rem;
 }
@@ -125,6 +143,18 @@ button {
 
 button:hover {
   filter: brightness(1.05);
+}
+
+.button-secondary {
+  background: var(--color-surface);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .nda-preview {
